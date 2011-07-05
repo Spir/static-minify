@@ -36,9 +36,10 @@ $config['use_min_cache']	 	= FALSE;
 | 			  do not names a group like a file!
 |
 */
+$config['css_route_segment'] 		= 'css';
 $config['css_local_path'] 		= FCPATH.'/css/';
 $config['css_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
-$config['css_cache_max_age'] 	= 3600 * 24 * 7 * 4; // 4 week cache header
+$config['css_cache_max_age'] 		= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['css_groups']			= Array(
 						'example1.css' => Array( // when loading example.com/css/example1.css you will load stylesheet1.css and stylesheet2.css into one single file
 									'stylesheet1.css',
@@ -62,16 +63,17 @@ $config['css_groups']			= Array(
 | 			 do not names a group like a file!
 |
 */
+$config['js_route_segment'] 		= 'js';
 $config['js_local_path'] 		= FCPATH.'/js/';
 $config['js_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
-$config['js_cache_max_age'] 	= 3600 * 24 * 7 * 4; // 4 week cache header
-$config['js_groups']		= Array(
-					'example1.js' => Array( // when loading example.com/js/example1.js you will load javascript1.js and javascript2.js into one single file
+$config['js_cache_max_age'] 		= 3600 * 24 * 7 * 4; // 4 week cache header
+$config['js_groups']			= Array(
+						'example1.js' => Array( // when loading example.com/js/example1.js you will load javascript1.js and javascript2.js into one single file
 								'javascript1.js',
 								'javascript2.js',
-					),
-					'example2.js' => Array( // when loading example.com/js/example2.js you will load javascript2.js and javascript3.js into one single file
+						),
+						'example2.js' => Array( // when loading example.com/js/example2.js you will load javascript2.js and javascript3.js into one single file
 								'javascript2.js',
 								'javascript3.js',
-					),
+						),
 );

@@ -31,15 +31,15 @@ class Min extends CI_Controller {
 		{
 			switch($segments)
 			{
-				case 'js':
+				case $this->config->item('js_route_segment'):
 					$this->_type = 'js';
 					break;
 					
-				case 'css':
+				case $this->config->item('css_route_segment'):
 					$this->_type = 'css';
 					break;
 					
-				// should not append if route proppely done, this switch could be extended for some other static items
+				// should not append if route propely done, this switch could be extended for some other static items
 				default:
 					$this->_type = 'unknow';
 					break;
@@ -111,8 +111,8 @@ class Min extends CI_Controller {
 	
 		foreach ($cache['headers'] as $header => $value)
 		{
-			// we don't want to display ETag and we already display our own expires headers
-			if ($header!='Expires' AND $header!='ETag')
+			// we don't want to display ETag
+			if ($header!='ETag')
 				Header($header . ': ' . $value);
 		}
 		echo $cache['content'];
