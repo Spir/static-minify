@@ -29,8 +29,9 @@ $config['use_min_cache']	 	= FALSE;
 | CSS settings
 |--------------------------------------------------------------------------
 |
-| css_local_path : Path to CSS folder
-| css_cache_path : path to CSS cache folder
+| css_route_segment : route segment to handle CSS files. exeample: mysite.com/css/myfile.css would be 'css'
+| css_local_path : Path to your CSS folder root
+| css_cache_path : path to CSS cache folder (usually application/cache/)
 | css_cache_max_age: header expires
 | css_groups: files name and path (relative to css_local_path)
 | 			  do not names a group like a file!
@@ -56,8 +57,9 @@ $config['css_groups']			= Array(
 | JS settings
 |--------------------------------------------------------------------------
 |
-| js_local_path : Path to JS folder
-| js_cache_path : path to JS cache folder
+| js_route_segment : route segment to handle javascript files. exeample: mysite.com/js/myfile.js would be 'js'
+| js_local_path : Path to your javascript folder root
+| js_cache_path : path to javascript cache folder (usually application/cache/)
 | js_cache_max_age: header expires
 | js_groups: files name and path (relative to js_local_path)
 | 			 do not names a group like a file!
