@@ -49,7 +49,7 @@ class Min extends CI_Controller {
     
 
 	/**
-	 * Depending on what the request is we call group method or file
+	 * load the files depending of type of request (single file or group files set in config)
 	 */
 	function _remap($request)
 	{
