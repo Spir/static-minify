@@ -2,14 +2,16 @@
 Static-Minify
 
 Add a CodeIgniter minify controller to 
-handle your static content 
+handle your static content.
 
-This script is using Minify
-
+This script is using Minify (currently 2.1.3)
 Minify is a PHP5 app that helps you follow several of Yahoo!'s Rules for High Performance Web Sites.
 Read more : http://code.google.com/p/minify/
 
-Currently using Minify 2.1.3
+Features:
+* compress css/js (or other if wanted) files using Minify script
+* cache the compressed file (using Minify cache or Phil's CodeIgniter cache lib, see http://philsturgeon.co.uk/code/codeigniter-cache)
+* compress a group of js/css files into one (declare your group of file in config/minify.php
 
 
 ======================================

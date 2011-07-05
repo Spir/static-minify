@@ -40,25 +40,14 @@ $config['css_local_path'] 		= FCPATH.'/css/';
 $config['css_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
 $config['css_cache_max_age'] 	= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['css_groups']			= Array(
-										/* FRONTEND */
-										'front.css' => Array(
-												'reset.css',
-												'base.css',
-												'jquery-ui-1.8.10.custom.css',
-												'main.css',
-										),
-										/* BACKEND */
-										'super_admin.css' => Array(
-											'reset.css',
-											'grid.css',
-											'superfish.css',
-											'uniform.default.css',
-											'jquery.wysiwyg.css',
-											'facebox.css',
-											'smoothness/jquery-ui-1.8.8.custom.css',
-											'jqueryFileTree.css',
-											'style.css',
-										),
+						'example1.css' => Array( // when loading example.com/css/example1.css you will load stylesheet1.css and stylesheet2.css into one single file
+									'stylesheet1.css',
+									'stylesheet2.css',
+						),
+						'example2.css' => Array( // when loading example.com/css/example2.css you will load stylesheet2.css and stylesheet3.css into one single file
+									'stylesheet2.css',
+									'stylesheet3.css',
+						),
 );
 
 /*
@@ -77,23 +66,12 @@ $config['js_local_path'] 		= FCPATH.'/js/';
 $config['js_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
 $config['js_cache_max_age'] 	= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['js_groups']		= Array(
-									/* FRONTEND */
-									'javascript.js' => Array(
-										'jquery-1.6.min.js',
-										'jquery-ui-1.8.10.custom.min.js',
-										'jquery.nivo.slider.pack.js',
-										'jquery.cycle.min.js',
-										'jquery.showLoading.min.js',
-										'jquery.ui.selectmenu.js',
-										'frontend.js'
-									),
-									/* BACKEND */
-									'super_admin.js' => Array(
-										'jquery.1.5.2.min.js', 
-										'jquery-ui-1.8.8.custom.min.js', 
-										'jquery.validate.min.js', 
-										'jquery.uniform.min.js', 
-										'jquery.wysiwyg.js',
-										'manager.js',										
-									),
+					'example1.js' => Array( // when loading example.com/js/example1.js you will load stylesheet1.js and stylesheet2.js into one single file
+								'stylesheet1.js',
+								'stylesheet2.js',
+					),
+					'example2.js' => Array( // when loading example.com/js/example2.js you will load stylesheet2.js and stylesheet3.js into one single file
+								'stylesheet2.js',
+								'stylesheet3.js',
+					),
 );
