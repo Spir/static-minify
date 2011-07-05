@@ -66,12 +66,12 @@ $config['js_local_path'] 		= FCPATH.'/js/';
 $config['js_cache_path'] 		= APPPATH.'/cache/'; // for minify cache only
 $config['js_cache_max_age'] 	= 3600 * 24 * 7 * 4; // 4 week cache header
 $config['js_groups']		= Array(
-					'example1.js' => Array( // when loading example.com/js/example1.js you will load stylesheet1.js and stylesheet2.js into one single file
-								'stylesheet1.js',
-								'stylesheet2.js',
+					'example1.js' => Array( // when loading example.com/js/example1.js you will load javascript1.js and javascript2.js into one single file
+								'javascript1.js',
+								'javascript2.js',
 					),
-					'example2.js' => Array( // when loading example.com/js/example2.js you will load stylesheet2.js and stylesheet3.js into one single file
-								'stylesheet2.js',
-								'stylesheet3.js',
+					'example2.js' => Array( // when loading example.com/js/example2.js you will load javascript2.js and javascript3.js into one single file
+								'javascript2.js',
+								'javascript3.js',
 					),
 );
