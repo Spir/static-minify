@@ -7,9 +7,11 @@ Minify is a PHP5 app that helps you follow several of Yahoo!'s Rules for High Pe
 Read more : http://code.google.com/p/minify/
 
 Features:
+
 * compress css/js (or other if wanted) files using Minify script
 * cache the compressed file (using Minify cache or Phil's CodeIgniter cache lib, see http://philsturgeon.co.uk/code/codeigniter-cache)
 * compress a group of js/css files into one (declare your group of file in config/minify.php
+* give the proper HTTP headers with custom expires (set in your config).
 
 
 ## Installation
